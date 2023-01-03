@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <title>Survey form</title>
+</head>
+
+<body class="text-light bg-dark">
+
+    <div class="container">
+        <h1 class="text-center">Survey form barae Masajid</h1>
+        <p class="text-center">Idara Wafaqul Masajid - zere intezam: Khadim-e-Millat Welfaare Foundation</p>
+        <div class="text-center" id="logo">
+            <img src="./media/logo.png" alt="Khadim-e-Millat Welfaare Foundation Logo" class="logo">
+        </div>
+        <form>
+            <div class="from-group row my-3">
+                <div class="flex-col-md-4  my-2">
+                    <input class="form-control" type="text" name="Masjid ka nam" id="NoM" placeholder="Masjid ka nam">
+                </div>
+                <div class="flex-col-md-4 my-2">
+                    <input class="form-control" type="text" name="Masjid ke Zimmedar ka nam" id="ZoM"
+                        placeholder="Masjid ke Zimmedar ka nam">
+                </div>
+                <div class="flex-col-md-4 my-2">
+                    <input class="form-control" type="number" name="ZMob" id="Mob"
+                        placeholder="Zimmedar ka Mobile Number">
+                </div>
+            </div>
+            <div class="from-group row my-3">
+                <div class="row">
+                    <h2 class="text-center my-3">Masjid men maojooda suhooliyat</h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-3 my-2">
+                        <input class="form-check-input mx-1" type="checkbox" name="Juma ka Bayan" id="BJ">
+                        <label class="form-check-label" for="juma ka bayan">Juma ka Bayan</label>
+                    </div>
+                    <div class="col-md-3 my-2">
+                        <input class="form-check-input mx-1" type="checkbox" name="Dars-e-Quraan" id="DQ">
+                        <label class="form-check-label" for="Dars-e-Quraan">Dars-e-Quraan</label>
+                    </div>
+                    <div class="col-md-3 my-2">
+                        <input class="form-check-input mx-1" type="checkbox" name="Maktab ka Qayam" id="MQ">
+                        <label class="form-check-label" for="Maktab ka Qayam">Maktab ka Qayam</label>
+                    </div>
+                    <div class="col-md-3 my-2">
+                        <input class="form-check-input mx-1" type="checkbox" name="Taraveeh ka Intezam" id="TI">
+                        <label class="form-check-label" for="Taraveeh ka Intezam">Taraveeh ka Intezam</label>
+                    </div>
+                </div>
+                <div class="align-items-center row">
+                    <h4 class="text-center my-3">Khuddam-e-Masjid ke Qayam-o-Ta'am ka Nazm</h4>
+                    <div class="align-items-center-row justify-content-around">
+                        <div class="row text-center">
+                            <div class="col-md-4 my-2">
+                                <input class="form-check-input mx-1" type="checkbox" name="Nashte ka intezam" id="TI">
+                                <label class="form-check-label" for="Nashte ka intezam">Nashte ka intezam</label>
+                            </div>
+                            <div class="col-md-4 my-2">
+                                <input class="form-check-input mx-1" type="checkbox"
+                                    name="Dono Waqt ke khane ka intezam" id="TI">
+                                <label class="form-check-label" for="Dono Waqt ke khane ka intezam">Dono Waqt ke khane
+                                    ka intezam</label>
+                            </div>
+                            <div class="col-md-4 my-2">
+                                <input class="form-check-input mx-1" type="checkbox" name="Qayam ka intezam" id="TI">
+                                <label class="form-check-label" for="Qayam ka intezam">Qayam ka intezam</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row d-flex justify-content-around text-center">
+                <h4 class="text-center my-3">Masjid kahan registered hai</h4>
+                <div class="col-md-3 my-2">
+                    <input class="form-check-input mx-1" type="checkbox" name="Waqf Board" id="WB">
+                    <label class="form-check-label" for="Waqf Board">Waqf Board</label>
+                </div>
+                <div class="col-md-3 my-2">
+                    <input class="form-check-input mx-1" type="checkbox" name="Chit Fund" id="CF">
+                    <label class="form-check-label" for="Chit Fund">Chit Fund</label>
+                </div>
+                <div class="col-md-3 my-2">
+                    <input class="form-check-input mx-1" type="checkbox" name="Kahin aur" id="Ka`">
+                    <label class="form-check-label" for="Kahin aur">Kahin aur</label>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="field my-3"> <!------Imam sb-------->
+                <h3 class="text-center my-3">Braa-e-Imam Imam</h3>
+                <input class="form-control my-3" type="text" name="Imam ka Nam" id="IN" placeholder="Imam ka nam">
+                <input class="form-control my-3" type="text" name="Imam Ghar ka pata" id="IGP"
+                    placeholder="Ghar ka pata">
+                <input class="form-control my-3" type="text" name="Imam Taalim" id="IT" placeholder="Taalim">
+                <input class="form-control my-3" type="text" name="Imam Madar-e-Ilmi" id="IMI"
+                    placeholder="Madar-e-Ilmi">
+                <div class="form-group row">
+                    <div class="flex-col-md-3
+                        <input class="form-control my-3" type="tel" name="Imam Mobile number" id="IMN"
+                            placeholder="Mobile number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="10"
+                            minlength="10">
+                    </div>
+                    <div class="flex-col-md-6-content-">
+                        <div class="flex-col-md-3 mx-1">
+                            <input required class="form-control my-3" type="number" name="Imam Ahl-e-khana ki tadad"
+                                id="IAKT" placeholder="Ahl-e-khana ki tadad">
+                        </div>
+                        <div class="flex-col-md-3 mx-1">
+                            <input required class="form-control my-3" type="number" name="Imam Mushahrah" id="IAKT"
+                                placeholder="Mushahrah">
+                        </div>
+                        <div class="flex-col-md-3 mx-1 my-3">
+                            <input type="text" name="Imam Aadhaar Number" id="IAKA" class="form-control" maxlength="12"
+                                minlength="12" placeholder="Aadhaar Number">
+                        </div>
+                        <div class="flex-col-md-3 my-auto">
+                            <div class="input-group">
+                                <input required type="text" class="form-control" id="" placeholder="Ayyam-e-khidmat">
+                                <div class="input-group-append">
+                                    <select class="form-select" name="MY" id="MY">
+                                        <option value="Year" label="Year"></option>
+                                        <option value="Months" label="Months"></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h6 class="text-center my-3">Family details</h6>
+                <div class="form-group row my-3">
+                    <div class="flex-col-md-6
+                        <label for="in1">Family membe 1 Name</label>
+                        <input type="text" name="F M N 1" id="FMN1" class="form-control">
+                    </div>
+                    <div class="flex-col-md-6
+                        <label for="in1">Family membe 1 Aadhaar Numbers</label>
+                        <input type="text" name="F M A 1" id="FMA1" class="form-control" maxlength="12" minlength="12">
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <div class="flex-col-md-6
+                        <label for="in2">Family membe 2 Name</label>
+                        <input type="text" name="F M N 2" id="FMN2" class="form-control">
+                    </div>
+                    <div class="flex-col-md-6
+                        <label for="in2">Family membe 2 Aadhaar Numbers</label>
+                        <input type="text" name="F M A 2" id="FMA2" class="form-control" maxlength="12" minlength="12">
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <div class="flex-col-md-6
+                        <label for="in3">Family membe 3 Name</label>
+                        <input type="text" name="F M N 3" id="FMN3" class="form-control">
+                    </div>
+                    <div class="flex-col-md-6
+                        <label for="in3">Family membe 3 Aadhaar Numbers</label>
+                        <input type="text" name="F M A 3" id="FMA3" class="form-control" maxlength="12" minlength="12">
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <div class="flex-col-md-6
+                        <label for="in4">Family membe 4 Name</label>
+                        <input type="text" name="F M N 4" id="FMN4" class="form-control">
+                    </div>
+                    <div class="flex-col-md-6
+                        <label for="in4">Family membe 4 Aadhaar Numbers</label>
+                        <input type="text" name="F M A 4" id="FMA4" class="form-control" maxlength="12" minlength="12">
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <div class="flex-col-md-6
+                        <label for="in5">Family membe 5 Name</label>
+                        <input type="text" name="F M N 5" id="FMN5" class="form-control">
+                    </div>
+                    <div class="flex-col-md-6
+                        <label for="in5">Family membe 5 Aadhaar Numbers</label>
+                        <input type="text" name="F M A 5" id="FMA5" class="form-control" maxlength="12" minlength="12">
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <div class="flex-col-md-6
+                        <label for="in1">Family membe 1 Name</label>
+                        <input type="text" name="F M N 1" id="FMN1" class="form-control">
+                    </div>
+                    <div class="flex-col-md-6
+                        <label for="in1">Family membe 1 Aadhaar Numbers</label>
+                        <input type="text" name="F M A 1" id="FMA1" class="form-control" maxlength="12" minlength="12">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

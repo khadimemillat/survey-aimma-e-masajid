@@ -1,0 +1,33 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.logo{
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto auto;
+    background-color: #fdfdfd;
+    border-radius: 20px;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .flex{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+}
+@media only screen and (min-width: 400px) {
+    .flex{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+}
