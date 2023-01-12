@@ -19,13 +19,16 @@
 
     <div class="container">
         <h1 class="text-center">Survey form barae Masajid</h1>
-        <p class="text-center">Idara Wafaqul Masajid - zere intezam: Khadim-e-Millat Welfaare Foundation</p>
+        <p class="text-center">Idara Wafaqul Masajid - zere intezam: <a href="http://kmwf.in/" target="_blank">Khadim-e-Millat
+                Welfaare Foundation</a></p>
         <div class="text-center" id="logo">
-            <img src="./media/logo.png" alt="Khadim-e-Millat Welfaare Foundation Logo" class="logo">
+            <a href="./media/logo.png" target="_blank">
+                <img src="./media/logo.png" alt="Khadim-e-Millat Welfaare Foundation Logo" class="logo">
+            </a>
         </div>
-        <form>
+        <form name="submit-to-google-sheet" action="submit">
             <div class="from-group row my-3">
-                <div class="flex-col-md-4  my-2">
+                <div class="flex-col-md-4 my-2">
                     <input class="form-control" type="text" name="Masjid ka nam" id="NoM" placeholder="Masjid ka nam">
                 </div>
                 <div class="flex-col-md-4 my-2">
@@ -43,19 +46,19 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-3 my-2">
-                        <input class="form-check-input mx-1" type="checkbox" name="Juma ka Bayan" id="BJ">
+                        <input class="form-check-input mx-1" type="checkbox" value="hota hai" name="Juma ka Bayan" id="BJ">
                         <label class="form-check-label" for="juma ka bayan">Juma ka Bayan</label>
                     </div>
                     <div class="col-md-3 my-2">
-                        <input class="form-check-input mx-1" type="checkbox" name="Dars-e-Quraan" id="DQ">
+                        <input class="form-check-input mx-1" type="checkbox" value="hota hai" name="Dars-e-Quraan" id="DQ">
                         <label class="form-check-label" for="Dars-e-Quraan">Dars-e-Quraan</label>
                     </div>
                     <div class="col-md-3 my-2">
-                        <input class="form-check-input mx-1" type="checkbox" name="Maktab ka Qeyaam" id="MQ">
+                        <input class="form-check-input mx-1" type="checkbox" value="hai" name="Maktab ka Qeyaam" id="MQ">
                         <label class="form-check-label" for="Maktab ka Qeyaam">Maktab ka Qeyaam</label>
                     </div>
                     <div class="col-md-3 my-2">
-                        <input class="form-check-input mx-1" type="checkbox" name="Taraveeh ka Intezam" id="TI">
+                        <input class="form-check-input mx-1" type="checkbox" value="hai" name="Taraveeh ka Intezam" id="TI">
                         <label class="form-check-label" for="Taraveeh ka Intezam">Taraveeh ka Intezam</label>
                     </div>
                 </div>
@@ -64,17 +67,17 @@
                     <div class="align-items-center-row justify-content-around">
                         <div class="row text-center">
                             <div class="col-md-4 my-2">
-                                <input class="form-check-input mx-1" type="checkbox" name="Nashte ka intezam" id="TI">
+                                <input class="form-check-input mx-1" type="checkbox" value="hai" name="Nashte ka intezam" id="TI">
                                 <label class="form-check-label" for="Nashte ka intezam">Nashte ka intezam</label>
                             </div>
                             <div class="col-md-4 my-2">
-                                <input class="form-check-input mx-1" type="checkbox"
+                                <input class="form-check-input mx-1" type="checkbox" value="hia"
                                     name="Dono Waqt ke khane ka intezam" id="TI">
                                 <label class="form-check-label" for="Dono Waqt ke khane ka intezam">Dono Waqt ke khane
                                     ka intezam</label>
                             </div>
                             <div class="col-md-4 my-2">
-                                <input class="form-check-input mx-1" type="checkbox" name="Qeyaam ka intezam" id="TI">
+                                <input class="form-check-input mx-1" type="checkbox" value="hai" name="Qeyaam ka intezam" id="TI">
                                 <label class="form-check-label" for="Qeyaam ka intezam">Qeyaam ka intezam</label>
                             </div>
                         </div>
@@ -84,15 +87,15 @@
             <div class="form-group row d-flex justify-content-around text-center">
                 <h4 class="text-center my-3">Masjid kahan registered hai</h4>
                 <div class="col-md-3 my-2">
-                    <input class="form-check-input mx-1" type="checkbox" name="Waqf Board" id="WB">
+                    <input class="form-check-input mx-1" type="radio" value="WaqK f Board" name="Registration place" id="WB">
                     <label class="form-check-label" for="Waqf Board">Waqf Board</label>
                 </div>
                 <div class="col-md-3 my-2">
-                    <input class="form-check-input mx-1" type="checkbox" name="Chit Fund" id="CF">
+                    <input class="form-check-input mx-1" type="radio" value="Chit Fund" name="Registration place" id="CF">
                     <label class="form-check-label" for="Chit Fund">Chit Fund</label>
                 </div>
                 <div class="col-md-3 my-2">
-                    <input class="form-check-input mx-1" type="checkbox" name="Kahin aur" id="Ka`">
+                    <input class="form-check-input mx-1" type="radio" value="Kahin aur" name="Registration place" id="Ka`">
                     <label class="form-check-label" for="Kahin aur">Kahin aur</label>
                 </div>
             </div>
@@ -108,17 +111,17 @@
                     placeholder="Madar-e-Ilmi">
                 <div class="form-group row">
                     <div class="flex-col-md-3">
-                        <input class="form-control my-3" type="tel" name="Imam Mobile number" id="IMN"
-                            placeholder="Mobile number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="10"
+                        <input class="form-control my-3" type="tel" name="Imam Contact number" id="IMN"
+                            placeholder="Contact number" maxlength="10"
                             minlength="10">
                     </div>
                     <div class="flex-col-md-6-content-">
                         <div class="flex-col-md-3 mx-1">
-                            <input required class="form-control my-3" type="number" name="Imam Ahl-e-khana ki tadad"
+                            <input class="form-control my-3" type="number" name="Imam Ahl-e-khana ki tadad"
                                 id="IAKT" placeholder="Ahl-e-khana ki tadad">
                         </div>
                         <div class="flex-col-md-3 mx-1">
-                            <input required class="form-control my-3" type="number" name="Imam Mushahrah" id="IAKT"
+                            <input class="form-control my-3" type="number" name="Imam Mushahrah" id="IAKT"
                                 placeholder="Mushahrah">
                         </div>
                         <div class="flex-col-md-3 mx-1 my-3">
@@ -127,9 +130,9 @@
                         </div>
                         <div class="flex-col-md-3 my-auto">
                             <div class="input-group">
-                                <input required type="text" class="form-control" id="" placeholder="Ayyam-e-khidmat">
+                                <input type="text" class="form-control" id="" placeholder="Ayyam-e-khidmat" name="Imam A K">
                                 <div class="input-group-append">
-                                    <select class="form-select" name="MY" id="MY">
+                                    <select class="form-select" name="IMY" id="MY">
                                         <option value="Year" label="Year"></option>
                                         <option value="Months" label="Months"></option>
                                     </select>
@@ -143,61 +146,61 @@
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for=" in1">Family membe 1 Name with relation</label>
-                        <input type="text" name="F M N 1" id="FMN1" class="form-control">
+                        <input type="text" name="I F M N 1" id="FMN1" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for=" in1">Family membe 1 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 1" id="FMA1" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="I F M A 1" id="FMA1" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for=" in2">Family membe 2 Name with relation</label>
-                        <input type="text" name="F M N 2" id="FMN2" class="form-control">
+                        <input type="text" name="I F M N 2" id="FMN2" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for=" in2">Family membe 2 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 2" id="FMA2" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="I F M A 2" id="FMA2" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for="in3">Family membe 3 Name with relation</label>
-                        <input type="text" name="F M N 3" id="FMN3" class="form-control">
+                        <input type="text" name="I F M N 3" id="FMN3" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for="in3">Family membe 3 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 3" id="FMA3" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="I F M A 3" id="FMA3" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for=" in4">Family membe 4 Name with relation</label>
-                        <input type="text" name="F M N 4" id="FMN4" class="form-control">
+                        <input type="text" name="I F M N 4" id="FMN4" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for=" in4">Family membe 4 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 4" id="FMA4" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="I F M A 4" id="FMA4" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for=" in5">Family membe 5 Name with relation</label>
-                        <input type="text" name="F M N 5" id="FMN5" class="form-control">
+                        <input type="text" name="I F M N 5" id="FMN5" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for=" in5">Family membe 5 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 5" id="FMA5" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="I F M A 5" id="FMA5" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
-                        <label for=" in1">Family membe 1 Name with relation</label>
-                        <input type="text" name="F M N 1" id="FMN1" class="form-control">
+                        <label for=" in6">Family membe 6 Name with relation</label>
+                        <input type="text" name="I F M N 6" id="FMN6" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
-                        <label for=" in1">Family membe 1 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 1" id="FMA1" class="form-control" maxlength="12" minlength="12">
+                        <label for=" in6">Family membe 6 Aadhaar Numbers</label>
+                        <input type="text" name="I F M A 6" id="FMA6" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
             </div>
@@ -205,36 +208,36 @@
             <hr>
             <div class="field my-3"> <!------Moazzin sb-------->
                 <h3 class="text-center my-3">Bra-e-Moazzin</h3>
-                <input class="form-control my-3" type="text" name="Imam ka Nam" id="IN" placeholder="Imam ka nam">
-                <input class="form-control my-3" type="text" name="Imam Ghar ka pata" id="IGP"
+                <input class="form-control my-3" type="text" name="Moazzin ka Nam" id="MN" placeholder="Moazzin ka nam">
+                <input class="form-control my-3" type="text" name="Moazzin Ghar ka pata" id="MGP"
                     placeholder="Ghar ka pata">
-                <input class="form-control my-3" type="text" name="Imam Taalim" id="IT" placeholder="Taalim">
-                <input class="form-control my-3" type="text" name="Imam Madar-e-Ilmi" id="IMI"
+                <input class="form-control my-3" type="text" name="Moazzin Taalim" id="MT" placeholder="Taalim">
+                <input class="form-control my-3" type="text" name="Moazzin Madar-e-Ilmi" id="MMI"
                     placeholder="Madar-e-Ilmi">
                 <div class="form-group row">
                     <div class="flex-col-md-3">
-                        <input class="form-control my-3" type="tel" name="Imam Mobile number" id="IMN"
-                            placeholder="Mobile number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="10"
+                        <input class="form-control my-3" type="tel" name="Moazzin Mobile number" id="MMN"
+                            placeholder="Mobile number" maxlength="10"
                             minlength="10">
                     </div>
                     <div class="flex-col-md-6-content-">
                         <div class="flex-col-md-3 mx-1">
-                            <input required class="form-control my-3" type="number" name="Imam Ahl-e-khana ki tadad"
-                                id="IAKT" placeholder="Ahl-e-khana ki tadad">
+                            <input class="form-control my-3" type="number" name="Moazzin Ahl-e-khana ki tadad"
+                                id="MAKT" placeholder="Ahl-e-khana ki tadad">
                         </div>
                         <div class="flex-col-md-3 mx-1">
-                            <input required class="form-control my-3" type="number" name="Imam Mushahrah" id="IAKT"
+                            <input class="form-control my-3" type="number" name="Moazzin Mushahrah" id="MAKT"
                                 placeholder="Mushahrah">
                         </div>
                         <div class="flex-col-md-3 mx-1 my-3">
-                            <input type="text" name="Imam Aadhaar Number" id="IAKA" class="form-control" maxlength="12"
+                            <input type="text" name="Moazzin Aadhaar Number" id="MAKA" class="form-control" maxlength="12"
                                 minlength="12" placeholder="Aadhaar Number">
                         </div>
                         <div class="flex-col-md-3 my-auto">
                             <div class="input-group">
-                                <input required type="text" class="form-control" id="" placeholder="Ayyam-e-khidmat">
+                                <input type="text" class="form-control" id="" placeholder="Ayyam-e-khidmat" name="Moazzin A K">
                                 <div class="input-group-append">
-                                    <select class="form-select" name="MY" id="MY">
+                                    <select class="form-select" name="MMY" id="MY">
                                         <option value="Year" label="Year"></option>
                                         <option value="Months" label="Months"></option>
                                     </select>
@@ -248,61 +251,61 @@
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for=" in1">Family membe 1 Name with relation</label>
-                        <input type="text" name="F M N 1" id="FMN1" class="form-control">
+                        <input type="text" name="M F M N 1" id="FMN1" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for=" in1">Family membe 1 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 1" id="FMA1" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="M F M A 1" id="FMA1" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for=" in2">Family membe 2 Name with relation</label>
-                        <input type="text" name="F M N 2" id="FMN2" class="form-control">
+                        <input type="text" name="M F M N 2" id="FMN2" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for=" in2">Family membe 2 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 2" id="FMA2" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="M F M A 2" id="FMA2" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for="in3">Family membe 3 Name with relation</label>
-                        <input type="text" name="F M N 3" id="FMN3" class="form-control">
+                        <input type="text" name="M F M N 3" id="FMN3" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for="in3">Family membe 3 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 3" id="FMA3" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="M F M A 3" id="FMA3" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for=" in4">Family membe 4 Name with relation</label>
-                        <input type="text" name="F M N 4" id="FMN4" class="form-control">
+                        <input type="text" name="M F M N 4" id="FMN4" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for=" in4">Family membe 4 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 4" id="FMA4" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="M F M A 4" id="FMA4" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for=" in5">Family membe 5 Name with relation</label>
-                        <input type="text" name="F M N 5" id="FMN5" class="form-control">
+                        <input type="text" name="M F M N 5" id="FMN5" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for=" in5">Family membe 5 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 5" id="FMA5" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="M F M A 5" id="FMA5" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
-                        <label for=" in1">Family membe 1 Name with relation</label>
-                        <input type="text" name="F M N 1" id="FMN1" class="form-control">
+                        <label for=" in1">Family membe 6 Name with relation</label>
+                        <input type="text" name="M F M N 6" id="FMN1" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
-                        <label for=" in1">Family membe 1 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 1" id="FMA1" class="form-control" maxlength="12" minlength="12">
+                        <label for=" in1">Family membe 6 Aadhaar Numbers</label>
+                        <input type="text" name="M F M A 6" id="FMA1" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
             </div>
@@ -310,36 +313,36 @@
             <hr>
             <div class="field my-3"> <!------Khadim-------->
                 <h3 class="text-center my-3">Bra-e-Khadim</h3>
-                <input class="form-control my-3" type="text" name="Imam ka Nam" id="IN" placeholder="Imam ka nam">
-                <input class="form-control my-3" type="text" name="Imam Ghar ka pata" id="IGP"
+                <input class="form-control my-3" type="text" name="Khadim ka Nam" id="IN" placeholder="Khadim ka nam">
+                <input class="form-control my-3" type="text" name="Khadim Ghar ka pata" id="IGP"
                     placeholder="Ghar ka pata">
-                <input class="form-control my-3" type="text" name="Imam Taalim" id="IT" placeholder="Taalim">
-                <input class="form-control my-3" type="text" name="Imam Madar-e-Ilmi" id="IMI"
+                <input class="form-control my-3" type="text" name="Khadim Taalim" id="IT" placeholder="Taalim">
+                <input class="form-control my-3" type="text" name="Khadim Madar-e-Ilmi" id="IMI"
                     placeholder="Madar-e-Ilmi">
                 <div class="form-group row">
                     <div class="flex-col-md-3">
-                        <input class="form-control my-3" type="tel" name="Imam Mobile number" id="IMN"
-                            placeholder="Mobile number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="10"
+                        <input class="form-control my-3" type="tel" name="Khadim Mobile number" id="IMN"
+                            placeholder="Mobile number" maxlength="10"
                             minlength="10">
                     </div>
                     <div class="flex-col-md-6-content-">
                         <div class="flex-col-md-3 mx-1">
-                            <input required class="form-control my-3" type="number" name="Imam Ahl-e-khana ki tadad"
+                            <input class="form-control my-3" type="number" name="Khadim Ahl-e-khana ki tadad"
                                 id="IAKT" placeholder="Ahl-e-khana ki tadad">
                         </div>
                         <div class="flex-col-md-3 mx-1">
-                            <input required class="form-control my-3" type="number" name="Imam Mushahrah" id="IAKT"
+                            <input class="form-control my-3" type="number" name="Khadim Mushahrah" id="IAKT"
                                 placeholder="Mushahrah">
                         </div>
                         <div class="flex-col-md-3 mx-1 my-3">
-                            <input type="text" name="Imam Aadhaar Number" id="IAKA" class="form-control" maxlength="12"
+                            <input type="text" name="Khadim Aadhaar Number" id="IAKA" class="form-control" maxlength="12"
                                 minlength="12" placeholder="Aadhaar Number">
                         </div>
                         <div class="flex-col-md-3 my-auto">
                             <div class="input-group">
-                                <input required type="text" class="form-control" id="" placeholder="Ayyam-e-khidmat">
+                                <input type="text" class="form-control" id="" placeholder="Ayyam-e-khidmat" name="Khadim AK">
                                 <div class="input-group-append">
-                                    <select class="form-select" name="MY" id="MY">
+                                    <select class="form-select" name="KMY" id="MY">
                                         <option value="Year" label="Year"></option>
                                         <option value="Months" label="Months"></option>
                                     </select>
@@ -353,61 +356,61 @@
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for=" in1">Family membe 1 Name with relation</label>
-                        <input type="text" name="F M N 1" id="FMN1" class="form-control">
+                        <input type="text" name="K F M N 1" id="FMN1" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for=" in1">Family membe 1 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 1" id="FMA1" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="K F M A 1" id="FMA1" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for=" in2">Family membe 2 Name with relation</label>
-                        <input type="text" name="F M N 2" id="FMN2" class="form-control">
+                        <input type="text" name="K F M N 2" id="FMN2" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for=" in2">Family membe 2 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 2" id="FMA2" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="K F M A 2" id="FMA2" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for="in3">Family membe 3 Name with relation</label>
-                        <input type="text" name="F M N 3" id="FMN3" class="form-control">
+                        <input type="text" name="K F M N 3" id="FMN3" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for="in3">Family membe 3 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 3" id="FMA3" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="K F M A 3" id="FMA3" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for=" in4">Family membe 4 Name with relation</label>
-                        <input type="text" name="F M N 4" id="FMN4" class="form-control">
+                        <input type="text" name="K F M N 4" id="FMN4" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for=" in4">Family membe 4 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 4" id="FMA4" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="K F M A 4" id="FMA4" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
                         <label for=" in5">Family membe 5 Name with relation</label>
-                        <input type="text" name="F M N 5" id="FMN5" class="form-control">
+                        <input type="text" name="K F M N 5" id="FMN5" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
                         <label for=" in5">Family membe 5 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 5" id="FMA5" class="form-control" maxlength="12" minlength="12">
+                        <input type="text" name="K F M A 5" id="FMA5" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
                 <div class="form-group row my-3">
                     <div class="flex-col-md-6">
-                        <label for=" in1">Family membe 1 Name with relation</label>
-                        <input type="text" name="F M N 1" id="FMN1" class="form-control">
+                        <label for=" in6">Family membe 6 Name with relation</label>
+                        <input type="text" name="K F M N 6" id="FMN6" class="form-control">
                     </div>
                     <div class="flex-col-md-6">
-                        <label for=" in1">Family membe 1 Aadhaar Numbers</label>
-                        <input type="text" name="F M A 1" id="FMA1" class="form-control" maxlength="12" minlength="12">
+                        <label for=" in6">Family membe 6 Aadhaar Numbers</label>
+                        <input type="text" name="K F M A 6" id="FMA6" class="form-control" maxlength="12" minlength="12">
                     </div>
                 </div>
             </div>
