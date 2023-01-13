@@ -1,4 +1,3 @@
-console.log("Taaha")
 const form = document.getElementById('submit-to-google-sheet');
 const scriptURL = "https://script.google.com/macros/s/AKfycbyLH-08CrRPToQ-Ij3Ncyzuy2AiYnJnIlIiar01raDvrMCjqrApyKaGXrzCQVxz6SeqVw/exec"
 
