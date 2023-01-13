@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
     <title>Survey form</title>
+
 </head>
 
 <body class="text-light bg-dark">
@@ -26,7 +27,8 @@
                 <img src="./media/logo.png" alt="Khadim-e-Millat Welfaare Foundation Logo" class="logo">
             </a>
         </div>
-        <form action="submit" name="submit-to-google-sheet">
+
+        <form id="submit-to-google-sheet" action="script.js" method="post" >
             <div class="from-group row my-3">
                 <div class="flex-col-md-4 my-2">
                     <input class="form-control" type="text" name="Masjid ka nam" id="NoM" placeholder="Masjid ka nam">
@@ -419,7 +421,10 @@
             </div>
             <br>
         </form>
+        <script src="script.js"></script>
     </div>
+
+
 </body>
 
 </html>
