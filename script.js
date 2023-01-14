@@ -49,7 +49,8 @@ form.addEventListener('submit', (event) => {
           details.style.display = "none"
           btn.style.display = "none"
           document.getElementById("loader").style.display = "none";
-          window.location.hash = "#logo"
+          let access = document.getElementById("logo");
+          access.scrollIntoView({ behavior: 'smooth' }, true);
         } else {
           alert("Error submitting form. Please try again.");
           document.getElementById("loader").style.display = "none";
