@@ -21,7 +21,8 @@ ohda.addEventListener('change', () => {
 // ----------- form submit-----------
 
 const form = document.getElementById('submit-to-google-sheet');
-const scriptURL = "https://script.google.com/macros/s/AKfycbyLH-08CrRPToQ-Ij3Ncyzuy2AiYnJnIlIiar01raDvrMCjqrApyKaGXrzCQVxz6SeqVw/exec"
+const scriptURL = "https://script.google.com/macros/s/AKfycbzeMCOaeN2CL5Dt9SSRtP0OtCWhl5v-rzY0j9jGLvVbsQQMHMdgwr3fz1rlMawesA3zFQ/exec"
+// const scriptURL = "https://script.google.com/macros/s/AKfycbyLH-08CrRPToQ-Ij3Ncyzuy2AiYnJnIlIiar01raDvrMCjqrApyKaGXrzCQVxz6SeqVw/exec"
 
 
 form.addEventListener('submit', (event) => {
