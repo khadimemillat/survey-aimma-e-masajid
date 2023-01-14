@@ -25,7 +25,8 @@ const scriptURL = "https://script.google.com/macros/s/AKfycbyLH-08CrRPToQ-Ij3Ncy
 
 
 form.addEventListener('submit', (event) => {
-  let name_ = document.getElementById("NoM")
+  let name_ = document.getElementById("NoM");
+  let _name = document.getElementById("ohda");
   if (name_.value == "") {
     alert('Please fill the details(Name of Masjid)');
   } else if (_name.value == "Select_your_Position") {
